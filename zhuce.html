@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>注册</title>
+	<link rel="stylesheet" href="./css/common.css">
+	<link rel="stylesheet" href="./font/iconfont.css">
+	<style>
+		html,body{
+			height: 100%;
+		}
+		.container{
+			height: 100%;
+			background-color:rgba(0,0,0,0.3);
+		}
+		.content{
+			width: 400px;
+			height: 500px;
+			background-color: #ffffff;
+			position: absolute;
+			top: 50%;
+			margin-top: -250px;
+			left: 50%;
+			margin-left: -200px;
+		}
+		.content > a {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+		}
+		.content > a >.icon1{
+			font-size: 30px;
+			color: #ccc;
+		}
+		.content > a >.icon1:hover{
+			color: #333;
+			cursor: pointer;
+		}
+		.one{
+			width: 300px;
+			margin: 2em auto;
+		}
+		.one p{
+			font-size: 18px;
+			line-height: 2em;
+		}
+		.one::after{
+			content: "";
+			display: block;
+			clear: both;
+		}
+		.one ul{
+			float: right;
+			position: relative;
+			top: -25px;
+		}
+		.one ul>li{
+			float: left;
+			width: 60px;
+			padding-left: 1em;
+		}
+		.one ul>li a:hover{
+			color: #b4a078;
+		}
+		.two{
+			width: 300px;
+			margin: 0 auto;
+		}
+		.two div{
+			border:1px solid #ccc;
+			width:100%;
+			border-radius: 5px;
+			margin: 10px 0;
+			position: relative;
+		}
+		.two div:nth-child(1),.two div:nth-child(4){
+			line-height: 40px;
+		}
+		.two div> input{
+			border:none;
+			color: #ccc;
+			font-size: 14px;
+			padding-left: 1em;
+			line-height: 40px;
+		}
+		.two div:nth-child(2){
+			border-radius: 25px;
+			text-align: center;
+			line-height: 40px;
+		}
+		.two div:nth-child(3)>input:first-child{
+			width:181px;
+		}
+		.two div:nth-child(3)>input:last-child{
+			width: 100px;
+			background-color: #ccc;
+			color:#333;
+			border-radius: 5px;
+		}
+		.two div:nth-child(3)>input:last-child:hover{
+			color: #b4a078;
+		}
+		.two div:nth-child(5){
+			margin-top: 50px;
+		}
+		.two div:nth-child(5)>input{
+			width: 100%;
+			text-align: center;
+			background-color: #b4a078;
+			color: #fff;
+			font-size: 20px;
+		}
+		.two div .icon{
+			font-size: 25px;
+			color: #ccc;
+			padding:0 .5em;
+			border-right: 1px solid #ccc;
+		}
+		.two div:first-child>input:focus + .icon2{
+			display: block;
+		}
+		.two div .icon2{
+			height: 40px;
+			position: absolute;
+			top: 0;
+			right: 15px;
+			display: none;
+		}
+		.three{
+			width: 300px;
+			margin:1em auto;
+			color: #666; 
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="content">
+			<a href="index.html"><i class="iconfont icon-cuo icon1"></i></a>
+			<div class="one">
+				<p>手机号注册</p>
+				<ul>
+					<li><a href="https://zc.reg.163.com/regInitialized">邮箱注册</a></li>
+					<li><a href="denglu.html">直接登录</a></li>
+				</ul>
+			</div>
+			<form action="#" method="get" class="two">
+				<div>
+					<i class="iconfont icon-shouji1 icon"></i>
+					<input type="text" placeholder ="请输入手机号">
+					<i class="iconfont icon-cuo icon2"></i>
+				</div>
+				<div>
+					<input type="text" placeholder="按住滑动，拖动完成上方拼图">
+				</div>
+				<div>
+					<input type="text" placeholder="请输入短信验证码">
+					<input type="submit" value="获取验证码">
+				</div>
+				<div>
+				<i class="iconfont icon-mima icon"></i>
+				<input type="password" placeholder="请输入密码">
+				</div>
+				<div>
+					<input type="submit" value="注册">
+				</div>
+			</form>
+			<div class="three">
+				<span>我同意<a href="https://reg.163.com/agreement_mobile_wap.shtml">《服务条款》</a>和<a href="https://reg.163.com/agreement_mobile_ysbh_wap.shtml">《网易隐私政策》</a></span>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
